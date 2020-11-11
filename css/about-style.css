@@ -1,0 +1,159 @@
+html{
+scroll-behavior: smooth;
+background: url('../images/paris-1836415.jpg') no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+body{
+/* background-color: #737373; */
+font-size: 18px;
+margin: 0;
+padding: 0;
+
+}
+h1{
+font-size: 2.25em;
+color: #dddddd;
+line-height: 1;
+padding: 50px 0;
+text-align: center;
+}
+
+h2{
+font-size: 1.75em;
+line-height: 1.5;
+}
+
+nav li{
+display:inline;
+padding-right:20px;
+
+}
+
+nav a{
+color: black;
+font-weight: bold;
+text-decoration: none; 
+}
+
+nav a:hover, nav a:focus{
+text-decoration: underline;
+}
+
+.skip a{
+background: white;
+left: 0;
+padding: 6px;
+-webkit-transition: top 1s ease-out;
+transition: top 1s ease-out;
+z-index: 1;
+position: absolute;
+top: -40px;
+}
+
+.skip a:focus{
+top: 0px;
+border: 2px solid #000000;
+}
+
+*:focus{
+  border: 2px solid #000000;
+}
+
+nav{
+background-color: #ddd;
+padding: 0; 
+text-align: left;
+}
+
+footer{
+position: fixed;
+width: 100%;
+bottom: 0;
+left: 0;
+background-color: black;
+color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+}
+
+.container{
+display: grid;
+grid-row-gap: 15px;
+grid-template-columns: auto auto;
+grid-template-rows: auto auto;
+}
+
+.wrapper{
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-columns: auto;
+}
+
+header p{
+color: white;
+font-size: 1.5em;
+padding: 0 100px;
+text-align: center;
+}
+
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 25px;
+  border: 10px solid black;
+  padding: 30px;
+  vertical-align: middle;
+  text-align: center;
+  /* max-height: 700px; */
+}
+
+.about p{
+  font-size: 1.25em;
+}
+
+@media screen and (max-width: 1000px){
+  .navbar{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  header p{
+    margin-bottom: 30px;
+  }
+
+  .text-block{
+    margin: 60px 0 60px 0;
+  }
+}
+
+@media all and (min-width: 800px){
+.navbar{
+  padding: 30px 0px;
+  text-align: left;
+}
+
+header p{
+  padding-bottom: 60px;
+}
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+html{
+    scroll-behavior: auto; /* Removes scroll animation */
+}
+
+.skip a{
+  -webkit-transition: none; /* sets to default setting */
+  transition: none;        /* sets to default setting */
+ }
+
+/*Turn off parallax*/
+header{
+  background-attachment: initial;
+}
+}

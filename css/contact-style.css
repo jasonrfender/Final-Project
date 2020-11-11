@@ -1,0 +1,227 @@
+html{
+scroll-behavior: smooth;
+background: url('../images/cologne-1846338.jpg') no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+body{
+font-size: 18px;
+margin: 0;
+padding: 0;
+
+}
+
+h1{
+color: #ffffff;
+font-size: 2.5em;
+text-shadow: 2px 2px #000000;
+line-height: 1;
+padding: 50px 0;
+text-align: center;
+}
+
+h2{
+font-size: 32px;
+text-shadow: 2px 2px #000000;
+line-height: 1.5;
+}
+
+p{
+  font-size: 1.4em;
+  text-align: center;
+  text-shadow: 3px 3px #000000;
+  color: #ffffff;
+  padding: 15px 0 20px 0;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 0 15px 0;
+}
+
+nav li{
+display:inline;
+padding-right:20px;
+
+}
+
+nav a{
+color: black;
+font-weight: bold;
+text-decoration: none; 
+}
+
+.paragraph-header{
+  color: #dddddd;
+}
+
+nav a:hover, nav a:focus{
+text-decoration: underline;
+}
+
+.skip a{
+background: white;
+left: 0;
+padding: 6px;
+-webkit-transition: top 1s ease-out;
+transition: top 1s ease-out;
+z-index: 1;
+position: absolute;
+top: -40px;
+}
+
+.skip a:focus{
+top: 0px;
+border: 2px solid #000000;
+}
+
+*:focus{
+  border: 2px solid #000000;
+}
+
+nav{
+background-color: #ddd;
+padding: 0; 
+text-align: left;
+}
+
+footer{
+position: fixed;
+width: 100%;
+bottom: 0;
+left: 0;
+background-color: black;
+color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+margin-top: 50px;
+}
+
+.container{
+display: grid;
+grid-row-gap: 15px;
+grid-template-columns: auto auto;
+grid-template-rows: auto auto;
+}
+
+.wrapper{
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-columns: auto;
+}
+
+header{
+background-attachment: fixed;     
+background-position: center;  
+background-repeat: no-repeat; 
+background-size: cover;       
+color: white;
+height: 400px;                
+}
+
+header p{
+color: white;
+font-size: 24px;
+padding: 0 100px;
+text-align: center;
+}
+
+.text-block{
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.form {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .7);
+  padding: 20px;
+}
+
+@media screen and (max-width: 1000px){
+  .navbar{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  }
+
+  .form {
+    margin: 0 0 100px 0;
+  }
+
+  nav li {
+    padding: 5px;
+  }
+
+  footer p{
+    font-size: 1em;
+  }
+}
+
+@media all and (min-width: 800px){
+.navbar{
+  padding: 20px 0px;
+  text-align: left;
+}
+
+.form {
+  margin: 0 0 100px 0;
+}
+
+footer p{
+  font-size: 1.25em;
+}
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+html{
+    scroll-behavior: auto; /* Removes scroll animation */
+}
+
+.skip a{
+  -webkit-transition: none; /* sets to default setting */
+  transition: none;        /* sets to default setting */
+ }
+
+/*Turn off parallax*/
+header{
+  background-attachment: initial;
+}
+}
