@@ -53,7 +53,7 @@ html{
   
   h1{
     font-size: 3em;
-    /* color: #dddddd; */
+    /* -webkit-text-stroke: 1px #ffffff; */
     line-height: 1;
     padding: 50px 0;
     text-align: center;
@@ -175,7 +175,7 @@ html{
     }
 
   .citations-footer{
-    position: fixed;
+    position: static;
   }
 
   .container{
@@ -233,11 +233,6 @@ html{
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  /* .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  } */
 
   .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner {
     transform: rotateY(180deg);
@@ -285,11 +280,6 @@ html{
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-/* .flip-card-dosanddonts:hover .flip-card-inner-dosanddonts {
-  transform: rotateY(180deg);
-} */
 
 .flip-card-dosanddonts:hover .flip-card-inner-dosanddonts, .flip-card-dosanddonts:focus .flip-card-inner-dosanddonts {
   transform: rotateY(180deg);
@@ -425,6 +415,103 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, .7);
   padding: 20px;
+}
+
+.citations-about-container {
+  -webkit-text-stroke: 1px #ffffff;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.citations-about-container a {
+  font-size: 1.45em;
+}
+
+.citations-about-container a:link {
+  color: #000000;
+}
+
+.citations-about-container a:visited {
+  color: rgb(3, 11, 245);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.citations-travel-safely-container {
+  -webkit-text-stroke: 1px #ffffff;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.citations-travel-safely-container a {
+  font-size: 1.45em;
+  padding-bottom: 15px;
+}
+
+.citations-travel-safely-container a:link {
+  color: #000000;
+}
+
+.citations-travel-safely-container a:visited {
+  color: rgb(3, 11, 245);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.citations-contact-container {
+  -webkit-text-stroke: 1px #ffffff;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.citations-contact-container a {
+  font-size: 1.45em;
+}
+
+.citations-contact-container a:link {
+  color: #000000;
+}
+
+.citations-contact-container a:visited {
+  color: rgb(3, 11, 245);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.citations-container {
+  -webkit-text-stroke: 1px #ffffff;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.citations-container a {
+  font-size: 1.45em;
+}
+
+.citations-container a:link {
+  color: #000000;
+}
+
+.citations-container a:visited {
+  color: rgb(3, 11, 245);
+  background-color: transparent;
+  text-decoration: none;
 }
   
   @media screen and (max-width: 1000px){
