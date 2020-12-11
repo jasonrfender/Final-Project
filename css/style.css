@@ -307,6 +307,7 @@ html{
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front-dosanddonts {
+  -webkit-text-stroke: .50px #000000;
   background-color: #2a5430;
   border-radius: 25px;
   color: #ffffff;
@@ -315,6 +316,7 @@ html{
 
 /* Style the back side */
 .flip-card-back-dosanddonts {
+  -webkit-text-stroke: .50px #000000;
   background-color: #b6a520;
   border-radius: 25px;
   color: #ffffff;
