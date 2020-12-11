@@ -316,10 +316,10 @@ html{
 
 /* Style the back side */
 .flip-card-back-dosanddonts {
-  -webkit-text-stroke: .25px #000000;
+  -webkit-text-stroke: .25px #ffffff;
   background-color: #b6a520;
   border-radius: 25px;
-  color: #ffffff;
+  color: #000000;
   transform: rotateY(180deg);
   overflow: scroll;
 }
