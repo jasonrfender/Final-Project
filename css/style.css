@@ -309,7 +309,7 @@ html{
 .flip-card-front-dosanddonts {
   background-color: #2a5430;
   border-radius: 25px;
-  color: black;
+  color: #ffffff;
   overflow: scroll;
 }
 
@@ -317,7 +317,7 @@ html{
 .flip-card-back-dosanddonts {
   background-color: #b6a520;
   border-radius: 25px;
-  color: white;
+  color: #ffffff;
   transform: rotateY(180deg);
   overflow: scroll;
 }
