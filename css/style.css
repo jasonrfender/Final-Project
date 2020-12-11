@@ -11,7 +11,7 @@ html{
     }
 
   body#contact-body{
-    background: url('../images/cologne-1846338.jpg') no-repeat center center fixed; 
+    background: #000000 url('../images/cologne-1846338.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -19,7 +19,7 @@ html{
     }
 
   body#citations-body{
-    background: url('../images/map-3578213.jpg') no-repeat center center fixed; 
+    background: #000000 url('../images/map-3578213.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -268,7 +268,7 @@ html{
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card-dosanddonts {
-  background-color: transparent;
+  background: #000000 transparent;
   height: 300px;
   width: 500px;
   border: 1px solid #f1f1f1;
